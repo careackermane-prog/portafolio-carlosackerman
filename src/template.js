@@ -84,7 +84,7 @@ export const template = `
         </div>
 
         <div class="hero-image">
-            <img src="${base}hero.jpeg" alt="Carlos Ackerman">
+        <img src="${base}hero.jpeg" alt="Carlos Ackerman">
         </div>
 
     </div>
