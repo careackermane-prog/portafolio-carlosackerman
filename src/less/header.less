@@ -1,0 +1,153 @@
+header{
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:999;
+
+    background:rgba(13,17,23,.90);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(0,255,153,.2);
+
+}
+
+header .container{
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+header h1{
+
+    color:@primary;
+
+    font-size:28px;
+
+    text-shadow:@shadow;
+
+}
+
+header nav ul{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+header nav a{
+
+    color:@white;
+
+    font-weight:600;
+
+    transition:@transition;
+
+    position:relative;
+
+}
+
+header nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:@primary;
+
+    transition:@transition;
+
+}
+
+header nav a:hover{
+
+    color:@primary;
+
+}
+
+header nav a:hover::after{
+
+    width:100%;
+
+}
+
+.hamburger{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:@primary;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+@media(max-width:768px){
+
+    .hamburger{
+
+        display:block;
+
+    }
+
+    header nav{
+
+        position:absolute;
+
+        top:80px;
+
+        left:0;
+
+        width:100%;
+
+        background:@dark2;
+
+        display:none;
+
+    }
+
+    header nav.active{
+
+        display:block;
+
+    }
+
+    header nav ul{
+
+        flex-direction:column;
+
+        padding:25px;
+
+        gap:20px;
+
+    }
+
+}
