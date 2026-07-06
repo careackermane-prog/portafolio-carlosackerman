@@ -1,3 +1,4 @@
+const base = import.meta.env.BASE_URL;
 export const template = `
 <header>
     <div class="container">
@@ -281,17 +282,17 @@ export const template = `
 
         <div class="gallery-grid">
 
-            <img src="/pc.png" alt="Mantenimiento de PC">
+            <img src="${base}pc.png">
 
-            <img src="/laptop.png" alt="Reparación de Laptop">
+<img src="${base}laptop.png">
 
-            <img src="/impresora.jpg" alt="Reparación de Impresoras">
+<img src="${base}impresora.jpg">
 
-            <img src="/hardware.jpg" alt="Actualización de Hardware">
+<img src="${base}hardware.jpg">
 
-            <img src="/virus.jpg" alt="Eliminación de Virus">
+<img src="${base}virus.jpg">
 
-            <img src="/taller.jpg" alt="Soporte Técnico">
+<img src="${base}taller.jpg">
 
         </div>
 
