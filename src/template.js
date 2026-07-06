@@ -84,7 +84,7 @@ export const template = `
         </div>
 
         <div class="hero-image">
-            <img src="/hero.jpeg" alt="Carlos Ackerman">
+            <img src="${base}hero.jpeg" alt="Carlos Ackerman">
         </div>
 
     </div>
@@ -284,15 +284,15 @@ export const template = `
 
             <img src="${base}pc.png">
 
-<img src="${base}laptop.png">
+            <img src="${base}laptop.png">
 
-<img src="${base}impresora.jpg">
+            <img src="${base}impresora.jpg">
 
-<img src="${base}hardware.jpg">
+            <img src="${base}hardware.jpg">
 
-<img src="${base}virus.jpg">
+            <img src="${base}virus.jpg">
 
-<img src="${base}taller.jpg">
+            <img src="${base}taller.jpg">
 
         </div>
 
